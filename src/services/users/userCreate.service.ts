@@ -1,9 +1,10 @@
-import { users } from "../../database";
+// import { users } from "../../database";
 
 import { IUserCreate, IUser } from "../../interfaces/users";
 
 
 const userCreateService = ({ name, email, password }: IUserCreate) => {
+  const users: any[] = []
   const emailAlreadyExists = users.find((user) => user.email === email);
 
   if (emailAlreadyExists) {

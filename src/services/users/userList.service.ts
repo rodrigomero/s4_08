@@ -1,7 +1,7 @@
-import { users } from "../../database";
+// import { users } from "../../database";
 
 const userListService = () => {
-  return users;
+  return [];
 };
 
 export default userListService;
